@@ -38,7 +38,7 @@ proxies:
 
   - name: "y-jp1"
     type: hysteria2
-    server: 43.216.83.242
+    server: sg.zx-app.top
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
@@ -52,7 +52,10 @@ proxies:
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
-    password: zxoking
+    password: Se7RAuFZ8Lzg
+    skip-cert-verify: true
+    fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
+
 
   - name: "h-jp1"
     type: vmess
