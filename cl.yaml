@@ -12,6 +12,9 @@ dns:
   ipv6: false
   nameserver:
     - 223.6.6.6
+
+
+    
 proxies:
   - name: "h-hk1"
     type: http
@@ -22,7 +25,6 @@ proxies:
     tls: true
     skip-cert-verify: true
 
-
   - name: "y-hk1"
     type: hysteria2
     server: 2406:da18:2b0:a100:6c0:9910:765b:f22a
@@ -32,9 +34,6 @@ proxies:
     password: Se7RAuFZ8Lzg
     skip-cert-verify: true
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
-
-
-
 
   - name: "y-jp1"
     type: hysteria2
@@ -56,7 +55,6 @@ proxies:
     skip-cert-verify: true
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
 
-
   - name: "h-jp1"
     type: vmess
     http-opts:
@@ -72,6 +70,9 @@ proxies:
     cipher: auto
     network: http
 
+
+
+
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -82,9 +83,6 @@ proxy-groups:
       - "h-hk1"
       - "y-usa1"
       - "h-jp1"
-
-
-
   - name: "♻️ 自动选择"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
