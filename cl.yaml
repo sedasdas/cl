@@ -36,7 +36,7 @@ proxies:
 
   - name: "v41"
     type: hysteria2
-    server: jsp.zx-app.top
+    server: jssp.zx-app.top
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
