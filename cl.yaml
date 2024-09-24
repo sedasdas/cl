@@ -34,8 +34,6 @@ proxies:
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
 
 
-
-
   - name: "v41"
     type: hysteria2
     server: jp.zx-app.top
@@ -72,6 +70,16 @@ proxies:
     cipher: auto
     network: http
 
+  - name: "v44"
+    type: hysteria2
+    server: sg.zx-app.top
+    port: 443
+    up: "3 Mbps"
+    down: "200 Mbps"
+    password: Se7RAuFZ8Lzg
+    skip-cert-verify: true
+    fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
+
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
@@ -82,12 +90,7 @@ proxy-groups:
       - "v41"
       - "v42"
       - "v43"
-
-
-
-
-
-
+      - "v44"
 
   - name: "♻️ 自动选择"
     type: url-test
@@ -100,6 +103,7 @@ proxy-groups:
       - "v41"
       - "v42"
       - "v43"
+      - "v44"
   - name: 🌍 国外媒体
     type: select
     proxies:
