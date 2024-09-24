@@ -12,22 +12,20 @@ dns:
   ipv6: false
   nameserver:
     - 223.6.6.6
-
-
-    
 proxies:
-  - name: "h-hk1"
+  - name: "v61"
     type: http
-    server: 2406:da18:2b0:a100:6c0:9910:765b:f22a
+    server: v6.zx-app.top
     port: "50211"
     username: admin
     password: root
     tls: true
     skip-cert-verify: true
 
-  - name: "y-hk1"
+
+  - name: "v62"
     type: hysteria2
-    server: 2406:da18:2b0:a100:6c0:9910:765b:f22a
+    server: v6.zx-app.top
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
@@ -35,9 +33,12 @@ proxies:
     skip-cert-verify: true
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
 
-  - name: "y-jp1"
+
+
+
+  - name: "v41"
     type: hysteria2
-    server: sg.zx-app.top
+    server: jp.zx-app.top
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
@@ -45,7 +46,7 @@ proxies:
     skip-cert-verify: true
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
 
-  - name: "y-usa1"
+  - name: "v42"
     type: hysteria2
     server: us.zx-app.top
     port: 443
@@ -55,7 +56,8 @@ proxies:
     skip-cert-verify: true
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
 
-  - name: "h-jp1"
+
+  - name: "v43"
     type: vmess
     http-opts:
       path:
@@ -63,36 +65,41 @@ proxies:
       headers:
         Host:
           - tms.dingtalk.com
-    server: 2406:da18:2b0:a100:6c0:9910:765b:f22a
+    server: v6.zx-app.top
     port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
     cipher: auto
     network: http
 
-
-
-
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "♻️ 自动选择"
-      - "y-jp1"
-      - "y-hk1"
-      - "h-hk1"
-      - "y-usa1"
-      - "h-jp1"
+      - "v61"
+      - "v62"
+      - "v41"
+      - "v42"
+      - "v43"
+
+
+
+
+
+
+
   - name: "♻️ 自动选择"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "y-jp1"
-      - "y-hk1"
-      - "h-hk1"
-      - "y-usa1"
+      - "v61"
+      - "v62"
+      - "v41"
+      - "v42"
+      - "v43"
   - name: 🌍 国外媒体
     type: select
     proxies:
