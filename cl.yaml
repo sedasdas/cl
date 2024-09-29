@@ -63,7 +63,7 @@ proxies:
       headers:
         Host:
           - tms.dingtalk.com
-    server: v6.zx-app.top
+    server: sg.zx-app.top
     port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
