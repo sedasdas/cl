@@ -15,7 +15,7 @@ dns:
 proxies:
   - name: "v61"
     type: http
-    server: v6.zx-app.top
+    server: jp.zx-app.top
     port: "50211"
     username: admin
     password: root
