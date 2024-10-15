@@ -63,7 +63,7 @@ proxies:
       headers:
         Host:
           - tms.dingtalk.com
-    server: sg.zx-app.top
+    server: jp.zx-app.top
     port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
@@ -72,7 +72,7 @@ proxies:
 
   - name: "v44"
     type: hysteria2
-    server: sg.zx-app.top
+    server: jp.zx-app.top
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
