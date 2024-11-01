@@ -5,6 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 ipv6: true
+
+hosts:
+  '*.mtalk.google.com': 104.194.83.206
+  'mtalk.google.com': 104.194.83.206
+  
 dns:
   enable: true
   listen: 0.0.0.0:1054
