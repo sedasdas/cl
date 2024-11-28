@@ -161,8 +161,6 @@ rules:
   - DOMAIN-KEYWORD,mtalk,DIRECT
   - DOMAIN-SUFFIX,zx-app.top,DIRECT
   - DOMAIN-KEYWORD,jav,🛑 全球拦截
-  - DOMAIN-KEYWORD,missav,🛑 全球拦截
-  - DOMAIN-KEYWORD,jav,🛑 全球拦截
   - DOMAIN-KEYWORD,arc,🐟 漏网之鱼
   - DOMAIN-KEYWORD,zhihu,DIRECT
   - DOMAIN-KEYWORD,ncat,DIRECT
