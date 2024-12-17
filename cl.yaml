@@ -30,7 +30,7 @@ proxies:
 
   - name: "h2"
     type: http
-    server: jp.zx-app.top
+    server: 18.142.43.26
     port: "50211"
     username: admin
     password: root
