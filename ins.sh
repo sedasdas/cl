@@ -4,6 +4,8 @@ echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 bash <(curl -fsSL https://get.hy2.sh/)
+rm h.tar
+wget https://raw.githubusercontent.com/sedasdas/cl/refs/heads/main/h.tar
 curl -L -o downloaded_file.tar.gz 'https://drive.google.com/uc?export=download&id=1xgi5NFO4hrqMEZjBQPqRePQYaU9L55ZM' && tar -zxvf downloaded_file.tar.gz  -C /etc/hysteria/
 systemctl restart hysteria-server.service
 systemctl enable hysteria-server.service
