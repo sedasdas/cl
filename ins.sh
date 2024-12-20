@@ -34,5 +34,9 @@ chmod +x start_gost
 systemctl daemon-reload
 systemctl restart gost.service
 systemctl enable gost.service
+bash <(wget -qO- -o- https://git.io/v2ray.sh)
+echo -e "3a44cffa-54d5-4b0f-8d6c-82045390e9fa\n" | v2ray id
+echo -e "50233\n" | v2ray port
+echo -e "2\n" | v2ray type
 sudo fallocate -l 1G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile && echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 sudo reboot
