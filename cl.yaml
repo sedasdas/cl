@@ -43,7 +43,7 @@ proxies:
     type: hysteria2
     server: us.zx-app.top
     port: 443
-    up: "3 Mbps"
+    up: "30 Mbps"
     down: "200 Mbps"
     password: Se7RAuFZ8Lzg
     skip-cert-verify: true
@@ -53,7 +53,7 @@ proxies:
     type: hysteria2
     server: 18.142.43.26
     port: 443
-    up: "3 Mbps"
+    up: "30 Mbps"
     down: "200 Mbps"
     password: Se7RAuFZ8Lzg
     skip-cert-verify: true
