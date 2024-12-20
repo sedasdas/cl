@@ -78,7 +78,7 @@ proxies:
       headers:
         Host:
           - tms.dingtalk.com
-    server: jp.zx-app.top
+    server: 18.142.43.26
     port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
