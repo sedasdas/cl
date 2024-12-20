@@ -51,7 +51,7 @@ proxies:
 
   - name: "y2"
     type: hysteria2
-    server: jp.zx-app.top
+    server: 18.142.43.26
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
