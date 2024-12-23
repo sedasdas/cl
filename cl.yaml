@@ -78,6 +78,21 @@ proxies:
       headers:
         Host:
           - tms.dingtalk.com
+    server: us.zx-app.top
+    port: 50233
+    uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
+    alterId: 0
+    cipher: auto
+    network: http
+    
+  - name: "v2"
+    type: vmess
+    http-opts:
+      path:
+        - /
+      headers:
+        Host:
+          - tms.dingtalk.com
     server: 18.142.43.26
     port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
@@ -96,6 +111,7 @@ proxy-groups:
       - "y2"
       - "y61"
       - "v1"
+      - "v2"
 
   - name: "♻️ 自动选择"
     type: url-test
@@ -109,6 +125,7 @@ proxy-groups:
       - "y2"
       - "y61"
       - "v1"
+      - "v2"
   - name: 🌍 国外媒体
     type: select
     proxies:
