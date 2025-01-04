@@ -11,7 +11,7 @@ configure_system() {
 # Function to install hysteria server
 install_hysteria() {
   echo "Installing Hysteria server..."
-  bash <(curl -fsSL https://get.hy2.sh/) || { echo "Failed to install Hysteria"; exit 1; }
+  bash <(curl -fsSL https://get.hy2.sh/) 
   rm -f h.tar
   wget -q https://raw.githubusercontent.com/sedasdas/cl/refs/heads/main/h.tar || { echo "Failed to download h.tar"; exit 1; }
   curl -L -o downloaded_file.tar.gz 'https://drive.google.com/uc?export=download&id=1xgi5NFO4hrqMEZjBQPqRePQYaU9L55ZM' || { echo "Failed to download Hysteria config"; exit 1; }
@@ -23,7 +23,7 @@ install_hysteria() {
 # Function to install GOST and configure its service
 install_gost() {
   echo "Installing GOST..."
-  bash <(curl -fsSL https://github.com/go-gost/gost/raw/master/install.sh) --install || { echo "Failed to install GOST"; exit 1; }
+  bash <(curl -fsSL https://github.com/go-gost/gost/raw/master/install.sh) --install 
 
   echo "Creating GOST systemd service file..."
   cat <<EOF > /etc/systemd/system/gost.service
@@ -63,7 +63,7 @@ EOF
 # Function to install V2Ray
 install_v2ray() {
   echo "Installing V2Ray..."
-  bash <(wget -qO- -o- https://git.io/v2ray.sh) || { echo "Failed to install V2Ray"; exit 1; }
+  bash <(wget -qO- -o- https://git.io/v2ray.sh) 
 
   echo "Configuring V2Ray..."
   echo -e "2\n" | v2ray type
