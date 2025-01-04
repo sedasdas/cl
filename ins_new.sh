@@ -91,15 +91,15 @@ setup_swap() {
 main() {
   echo "Starting setup script..."
   cd /root || { echo "Failed to change directory to /root"; exit 1; }
-
+  setup_swap
   configure_system
   install_hysteria
   install_gost
   install_v2ray
-  setup_swap
+  
 
   echo "Rebooting system..."
-  sudo reboot
+  
 }
 
 main
