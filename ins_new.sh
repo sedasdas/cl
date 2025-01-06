@@ -75,6 +75,10 @@ install_v2ray() {
   else
     echo -e "$port\n" | v2ray port
   fi
+  sed -i 's/IPOnDemand/AsIs/g'  /etc/v2ray/bin/config.json
+  sed -i 's/IPIfNonMatch/AsIs/g' /etc/v2ray/config.json
+  systemctl daemon-reload
+  systemctl restart v2ray.service
 }
 
 # Function to create and enable swap
