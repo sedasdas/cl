@@ -61,7 +61,7 @@ proxies:
 
   - name: "y61"
     type: hysteria2
-    server: v6.zx-app.top
+    server: '2406:da18:7b5:c600:2cf4:3ce1:3d7a:a4c7'
     port: 443
     up: "3 Mbps"
     down: "200 Mbps"
