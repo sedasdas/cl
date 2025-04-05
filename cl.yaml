@@ -176,6 +176,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
 rules:
+  - IP-CIDR,45.254.27.178/32,h2
   - DOMAIN-KEYWORD,mtalk,DIRECT
   - DOMAIN-SUFFIX,zx-app.top,DIRECT
   - DOMAIN-KEYWORD,arc,🐟 漏网之鱼
