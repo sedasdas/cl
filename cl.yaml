@@ -38,6 +38,15 @@ proxies:
     tls: true
     skip-cert-verify: true
 
+  - name: "h62"
+    type: http
+    server: 2406:da18:7b5:c600:2cf4:3ce1:3d7a:a4c7
+    port: "50211"
+    username: admin
+    password: root
+    tls: true
+    skip-cert-verify: true
+
 
   - name: "y1"
     type: hysteria2
@@ -107,6 +116,7 @@ proxy-groups:
       - "♻️ 自动选择"
       - "h1"
       - "h2"
+      - "h62"
       - "y1"
       - "y2"
       - "y61"
@@ -121,6 +131,7 @@ proxy-groups:
     proxies:
       - "h1"
       - "h2"
+      - "h62"
       - "y1"
       - "y2"
       - "y61"
