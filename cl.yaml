@@ -31,7 +31,7 @@ proxies:
 
   - name: "h2"
     type: http
-    server: 52.77.246.247
+    server: 52.220.217.123
     port: "50211"
     username: admin
     password: root
@@ -60,7 +60,7 @@ proxies:
 
   - name: "y2"
     type: hysteria2
-    server: 52.77.246.247
+    server: 52.220.217.123
     port: 443
     up: "30 Mbps"
     down: "200 Mbps"
@@ -102,7 +102,7 @@ proxies:
       headers:
         Host:
           - tms.dingtalk.com
-    server: 52.77.246.247
+    server: 52.220.217.123
     port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
