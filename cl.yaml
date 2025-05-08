@@ -187,8 +187,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
 rules:
-  - DOMAIN-KEYWORD,av,🛑 全球拦截
-  - DOMAIN-KEYWORD,jav,🛑 全球拦截
   - IP-CIDR,45.254.27.178/32,h2
   - DOMAIN-KEYWORD,mtalk,DIRECT
   - DOMAIN-SUFFIX,zx-app.top,DIRECT
