@@ -9,7 +9,6 @@ ipv6: true
 hosts:
   '*mtalk.google.com': 172.217.194.188
   'mtalk.google.com': 142.251.10.188
-  'mtalk.google.com': 172.217.194.188
 
   
 dns:
