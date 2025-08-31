@@ -85,31 +85,31 @@ proxies:
     skip-cert-verify: true
     fingerprint: "BF:22:51:79:F5:62:E9:C5:A4:0D:90:56:EB:CA:6F:D8:71:4B:0F:5B:19:FA:23:83:DC:58:40:95:FA:82:D6:FD"
 
-  - name: "v1"
+  - name: "ding"
     type: vmess
     http-opts:
       path:
         - /
       headers:
         Host:
-          - tms.dingtalk.com
-    server: us.zx-app.top
-    port: 50233
+          - down.dingtalk.com
+    server: 2406:da18:7b5:c600:b94b:d345:71da:819f
+    port: 3078
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
     cipher: auto
     network: http
     
-  - name: "v2"
+  - name: "pan"
     type: vmess
     http-opts:
       path:
         - /
       headers:
         Host:
-          - tms.dingtalk.com
-    server: 52.220.217.123
-    port: 50233
+          - tjtn.pan.wo.cn
+    server: 2406:da18:7b5:c600:b94b:d345:71da:819f
+    port: 3078
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
     cipher: auto
@@ -126,8 +126,8 @@ proxy-groups:
       - "y1"
       - "y2"
       - "y61"
-      - "v1"
-      - "v2"
+      - "ding"
+      - "pan"
 
   - name: "♻️ 自动选择"
     type: url-test
@@ -141,8 +141,8 @@ proxy-groups:
       - "y1"
       - "y2"
       - "y61"
-      - "v1"
-      - "v2"
+      - "ding"
+      - "pan"
   - name: 🌍 国外媒体
     type: select
     proxies:
