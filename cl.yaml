@@ -109,7 +109,7 @@ proxies:
         Host:
           - down.dingtalk.com
     server: us.zx-app.top
-    port: 3078
+    port: 50233
     uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
     alterId: 0
     cipher: auto
