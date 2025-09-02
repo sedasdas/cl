@@ -99,6 +99,21 @@ proxies:
     alterId: 0
     cipher: auto
     network: http
+
+  - name: "dingm"
+    type: vmess
+    http-opts:
+      path:
+        - /
+      headers:
+        Host:
+          - down.dingtalk.com
+    server: us.zx-app.top
+    port: 3078
+    uuid: 3a44cffa-54d5-4b0f-8d6c-82045390e9fa
+    alterId: 0
+    cipher: auto
+    network: http
     
   - name: "pan"
     type: vmess
@@ -127,6 +142,7 @@ proxy-groups:
       - "y2"
       - "y61"
       - "ding"
+      - "dingm"
       - "pan"
 
   - name: "♻️ 自动选择"
@@ -142,6 +158,7 @@ proxy-groups:
       - "y2"
       - "y61"
       - "ding"
+      - "dingm"
       - "pan"
   - name: 🌍 国外媒体
     type: select
